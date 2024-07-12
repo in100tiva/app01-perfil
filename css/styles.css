@@ -1,4 +1,3 @@
-
 :root {
     --primary-color: #00a8ff;
     --secondary-color: #0097e6;
@@ -166,6 +165,7 @@ h1::after {
     font-weight: bold;
     color: var(--primary-color);
     margin-bottom: 0.25rem;
+    transition: color 0.3s ease;
 }
 
 .info-value {
@@ -177,6 +177,25 @@ h1::after {
 
 .info-value:hover {
     background-color: rgba(53, 59, 72, 0.8);
+}
+
+.info-value a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-value a:hover {
+    color: var(--primary-color);
+}
+
+.info-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.info-row .info-item {
+    flex: 1;
 }
 
 .edit-profile {
@@ -266,5 +285,10 @@ select:focus {
 
     .nav-menu li {
         margin: 0.25rem 0.5rem;
+    }
+
+    .info-row {
+        flex-direction: column;
+        gap: 0;
     }
 }

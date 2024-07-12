@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
     <title>Perfil do Usuário - Tema Escuro</title>
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav class="nav-menu">
@@ -23,19 +22,29 @@
             <div class="profile-info">
                 <div class="info-item">
                     <div class="info-label">Nome:</div>
-                    <div class="info-value">João da Silva</div>
+                    <div class="info-value" id="nome">João da Silva</div>
                 </div>
                 <div class="info-item">
                     <div class="info-label">E-mail:</div>
-                    <div class="info-value">joao.silva@email.com</div>
+                    <div class="info-value" id="email">joao.silva@email.com</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-item">
+                        <div class="info-label">Telefone:</div>
+                        <div class="info-value" id="telefone">(11) 98765-4321</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Localização:</div>
+                        <div class="info-value" id="localizacao">São Paulo, SP</div>
+                    </div>
                 </div>
                 <div class="info-item">
-                    <div class="info-label">Telefone:</div>
-                    <div class="info-value">(11) 98765-4321</div>
+                    <div class="info-label">LinkedIn:</div>
+                    <div class="info-value"><a href="#" id="linkedin" target="_blank">linkedin.com/in/joaodasilva</a></div>
                 </div>
                 <div class="info-item">
-                    <div class="info-label">Localização:</div>
-                    <div class="info-value">São Paulo, SP</div>
+                    <div class="info-label">GitHub:</div>
+                    <div class="info-value"><a href="#" id="github" target="_blank">github.com/joaodasilva</a></div>
                 </div>
                 <div class="info-item">
                     <div class="info-label">Classe:</div>
@@ -53,6 +62,8 @@
             <button class="edit-profile">Editar Perfil</button>
         </div>
     </div>
-    <script src="js/main.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/download.js"></script>
 </body>
 </html>
