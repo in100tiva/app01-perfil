@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Perfil do Usuário - Tema Escuro</title>
+
+</head>
+<body>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#guilda">Guilda</a></li>
+            <li><a href="#missoes">Missões</a></li>
+            <li><a href="#recompensas">Recompensas</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <div class="profile-container">
+            <h1>Perfil do Usuário</h1>
+            <img src="/api/placeholder/150/150" alt="Foto de perfil" class="profile-image">
+            <div class="profile-info">
+                <div class="info-item">
+                    <div class="info-label">Nome:</div>
+                    <div class="info-value">João da Silva</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">E-mail:</div>
+                    <div class="info-value">joao.silva@email.com</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Telefone:</div>
+                    <div class="info-value">(11) 98765-4321</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Localização:</div>
+                    <div class="info-value">São Paulo, SP</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Classe:</div>
+                    <select id="classe-select">
+                        <option value="">Selecione uma classe</option>
+                        <option value="front-end">Front End</option>
+                        <option value="back-end">Back End</option>
+                        <option value="mobile-android">Mobile Android</option>
+                        <option value="mobile-ios">Mobile IOS</option>
+                        <option value="devops">DevOps</option>
+                        <option value="analista-dados">Analista de Dados</option>
+                    </select>
+                </div>
+            </div>
+            <button class="edit-profile">Editar Perfil</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
